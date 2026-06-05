@@ -1,0 +1,95 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#app {
+    width: 350px;
+    margin: 3px 10px 0 auto;
+    height: 90vh;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 50px;
+    margin-left: 10px;
+}
+
+.head_title{
+    font-size: 20px;
+    margin: auto 0;
+}
+
+header{
+    display: flex;
+    margin: 0 auto;
+    border-bottom:1px solid #000;
+}
+
+#display{
+    max-height: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scroll-up,.scroll-down{
+    width: 50px;
+    height:50px;
+    display: grid;
+    border-radius: 24px;
+    background-color: #fff;
+    font-size: 30px;
+}
+
+.scroll-down{
+    margin-top: 20px;
+}
+
+.scroll-buttons{
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.full-link{
+    text-decoration: none;
+}
+
+#theme-color{
+    display: grid;
+}
+
+@media screen and (min-width:680px) {
+    .logo{
+        margin-left: 20px !important;
+    }
+    #app{
+        border: 2px solid #000;
+    }
+    .scroll-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:679px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    
+    #app {
+        width: 100%;
+        margin: 10px auto 0;
+        height: auto;
+        min-height: 60vh;
+    }
+    
+    .scroll-buttons{
+        display: none;
+    }
+    
+    .side {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
